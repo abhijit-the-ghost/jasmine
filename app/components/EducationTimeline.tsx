@@ -12,8 +12,8 @@ export default function EducationTimeline() {
             degree: "Higher Secondary Education (+2)",
             institution: "Kathmandu Model College, Imadol, Lalitpur",
             period: "2021 – 2023",
-            details: "Completed high school with a focus on Social Sciences. Developed a foundational interest in human behavior and social dynamics."
-        },
+            details: "Completed +2 in Science stream. Built a strong foundation in biology and human physiology, which sparked my early interest in understanding the mind, behavior, and emotional processes."
+        }
         {
             degree: "Secondary Education (Grades 6 - 10)",
             institution: "Sainik Awasiya Mahavidyalaya, Sallaghari, Bhaktapur",
