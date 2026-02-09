@@ -1,26 +1,135 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "daisyui/theme" {
+    name: "psychbloom";
+    default: true;
+    prefersdark: true;
+    color-scheme: "light";
+
+    /* Base colors — clean, soft, calming */
+    --color-base-100: oklch(99% 0.005 260);
+    /* very warm off-white */
+    --color-base-200: oklch(96% 0.008 260);
+    /* light warm gray-blue */
+    --color-base-300: oklch(92% 0.012 260);
+    /* slightly deeper neutral */
+    --color-base-content: oklch(28% 0.02 260);
+    /* deep warm gray for text */
+
+    /* Primary — Her favorite pink (soft rose, empathetic, warm) */
+    --color-primary: oklch(75% 0.18 340);
+    /* soft rose pink #F06292-ish */
+    --color-primary-content: oklch(100% 0 0);
+    /* pure white for text on pink */
+
+    /* Secondary — Her lucky blue (trust, calm, professional) */
+    --color-secondary: oklch(68% 0.14 240);
+    /* soft trustworthy blue #6095F0-ish */
+    --color-secondary-content: oklch(100% 0 0);
+
+    /* Accent — Lighter pink variation (for hover, tags, highlights) */
+    --color-accent: oklch(82% 0.16 340);
+    /* brighter rose #F48FB1-ish */
+    --color-accent-content: oklch(20% 0.02 340);
+
+    /* Neutral — Slate for depth */
+    --color-neutral: oklch(35% 0.015 260);
+    --color-neutral-content: oklch(98% 0 0);
+
+    /* Info — Calming mid-blue (used for links, info boxes) */
+    --color-info: oklch(72% 0.13 240);
+    --color-info-content: oklch(100% 0 0);
+
+    /* Success — Gentle green (for success messages, checks) */
+    --color-success: oklch(68% 0.14 145);
+    --color-success-content: oklch(100% 0 0);
+
+    /* Warning — Soft amber/orange (for cautions) */
+    --color-warning: oklch(78% 0.18 70);
+    --color-warning-content: oklch(20% 0 0);
+
+    /* Error — Muted red (not aggressive) */
+    --color-error: oklch(68% 0.20 25);
+    --color-error-content: oklch(100% 0 0);
+
+    /* Border radius — soft and friendly */
+    --radius-selector: 0.75rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.75rem;
+
+    /* Border width */
+    --border: 1px;
+
+    /* Depth & noise (subtle paper-like feel) */
+    --depth: 1;
+    --noise: 0.015;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* very light grain */
+@plugin "daisyui/theme" {
+    name: "psychbloom-dark";
+    color-scheme: "dark";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+    /* Base colors — deep, sleek slate */
+    --color-base-100: #0F172A;
+    /* slightly deeper slate for more pop */
+    --color-base-200: #1E293B;
+    /* darker neutral */
+    --color-base-300: #334155;
+    /* card background */
+    --color-base-content: #F8FAFC;
+    /* very light slate-white for maximum legibility */
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    /* Primary — Pop pink (slightly more vibrant for dark backgrounds) */
+    --color-primary: #F472B6;
+    /* rose-400 */
+    --color-primary-content: #FFFFFF;
+
+    /* Secondary — Trustworthy blue (brightened for contrast) */
+    --color-secondary: #BAE6FD;
+    /* sky-200 */
+    --color-secondary-content: #0F172A;
+
+    /* Accent — Soft pink accent */
+    --color-accent: #FBCFE8;
+    /* pink-200 */
+    --color-accent-content: #0F172A;
+
+    /* Neutral — Now a light gray-blue for readability */
+    --color-neutral: #CBD5E1;
+    /* slate-300 - much better for text contrast */
+    --color-neutral-content: #0F172A;
+
+    /* Info — Light blue for info */
+    --color-info: #7DD3FC;
+    /* sky-300 */
+    --color-info-content: #0F172A;
+
+    /* Success — Vibrant green */
+    --color-success: #4ADE80;
+    /* green-400 */
+    --color-success-content: #0F172A;
+
+    /* Warning — Warm amber */
+    --color-warning: #FBBF24;
+    /* amber-400 */
+    --color-warning-content: #0F172A;
+
+    /* Error — Soft coral/red */
+    --color-error: #FB7185;
+    /* rose-400 */
+    --color-error-content: #FFFFFF;
+
+    /* Border radius — soft and friendly */
+    --radius-selector: 0.75rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.75rem;
+
+    /* Border width */
+    --border: 1px;
+
+    /* Depth & noise */
+    --depth: 1;
+    --noise: 0;
 }
