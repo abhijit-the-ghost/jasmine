@@ -13,7 +13,7 @@ export default function EducationTimeline() {
             institution: "Kathmandu Model College, Imadol, Lalitpur",
             period: "2021 – 2023",
             details: "Completed +2 in Science stream. Built a strong foundation in biology and human physiology, which sparked my early interest in understanding the mind, behavior, and emotional processes."
-        }
+        },
         {
             degree: "Secondary Education (Grades 6 - 10)",
             institution: "Sainik Awasiya Mahavidyalaya, Sallaghari, Bhaktapur",

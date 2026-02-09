@@ -40,7 +40,7 @@ export default function BlogDetail() {
         author: {
             name: "Jasmine",
             bio: "Psychology student and mental health advocate dedicated to sharing evidence-based insights.",
-            image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=688&auto=format&fit=crop"
+            image: "/me.jpg"
         }
     };
 
